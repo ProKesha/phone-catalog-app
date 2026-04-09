@@ -76,6 +76,9 @@ export const PicturesSlider = () => {
                     src={slide.src}
                     alt={slide.alt}
                     className={styles.image}
+                    loading={slide === SLIDES[0] ? 'eager' : 'lazy'}
+                    fetchPriority={slide === SLIDES[0] ? 'high' : 'auto'}
+                    decoding="async"
                   />
                 </picture>
               </div>

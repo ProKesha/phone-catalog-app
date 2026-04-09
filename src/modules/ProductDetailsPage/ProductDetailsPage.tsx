@@ -354,6 +354,8 @@ export const ProductDetailsPage = () => {
                 <img
                   src={`${import.meta.env.BASE_URL}${img}`}
                   alt={product.name}
+                  loading="lazy"
+                  decoding="async"
                 />
               </button>
             </li>
@@ -364,6 +366,8 @@ export const ProductDetailsPage = () => {
           <img
             src={`${import.meta.env.BASE_URL}${activeImage || product.images[0]}`}
             alt={product.name}
+            fetchPriority="high"
+            decoding="async"
           />
         </div>
 
@@ -458,7 +462,11 @@ export const ProductDetailsPage = () => {
                   ? `${styles.favoriteButton} ${styles.favoriteButtonActive}`
                   : styles.favoriteButton
               }
-              aria-label={`Add ${product.name} to favorites`}
+              aria-label={
+                favorite
+                  ? `Remove ${product.name} from favorites`
+                  : `Add ${product.name} to favorites`
+              }
               onClick={() => toggle(product.id)}
             >
               <svg

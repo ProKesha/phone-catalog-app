@@ -35,7 +35,13 @@ export const ShopByCategory = ({ counts }: Props) => (
       <li key={to}>
         <Link to={to} className={styles.card}>
           <div className={styles.imageWrapper}>
-            <img src={image} alt={title} className={styles.image} />
+            <img
+              src={image}
+              alt={title}
+              className={styles.image}
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <p className={styles.title}>{title}</p>
           <p className={styles.count}>{counts[countKey]} models</p>

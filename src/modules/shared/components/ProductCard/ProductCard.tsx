@@ -53,6 +53,7 @@ export const ProductCard = ({
           alt={name}
           className={styles.image}
           loading="lazy"
+          decoding="async"
         />
       </Link>
 
@@ -94,7 +95,11 @@ export const ProductCard = ({
               ? `${styles.favoriteButton} ${styles.favoriteButtonActive}`
               : styles.favoriteButton
           }
-          aria-label={`Add ${name} to favorites`}
+          aria-label={
+            isFavorite(itemId)
+              ? `Remove ${name} from favorites`
+              : `Add ${name} to favorites`
+          }
           onClick={() => toggle(itemId)}
         >
           <svg
