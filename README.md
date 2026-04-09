@@ -1,9 +1,30 @@
-# React TypeScript Starter Pack
 
-To use this template click `Use this template`
+ # Phone Catalog App
 
-### Available Scripts
+A modern React + TypeScript application for browsing phones, tablets, and accessories. The project demonstrates working with real-world UI patterns such as product lists, filtering, sorting, pagination, and state management.
 
-`Deploy` - available to deploy your application to gh-pages, to deploy the project, change the second line of code in package.json, specifically the homepage value, from "." to the repository name
+## Live Preview
 
-`SCSS Preprocessor` - available to write your styles with modern style language
+https://prokesha.github.io/react_phone-catalog/
+
+## Design Reference
+
+Based on Mate Academy layout with additional UI improvements.
+
+## Technologies Used
+
+- React
+- TypeScript
+- Vite
+- CSS Modules
+- React Router
+- LocalStorage API
+
+## Getting Started
+
+```bash
+git clone https://github.com/ProKesha/react_phone-catalog.git
+cd react_phone-catalog
+
+npm install
+npm start
