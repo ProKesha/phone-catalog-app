@@ -1,17 +1,17 @@
 # React Phone Catalog
 
- Overview
+## Overview
 
 React Phone Catalog is a modern e-commerce web application built with React and TypeScript. The project is designed to simulate a real online store experience, focusing on clean architecture, reusable components, and smooth user interactions.
 
 The application allows users to browse products across multiple categories, view detailed product information, and manage their shopping experience through favorites and cart functionality. It demonstrates real-world frontend practices such as routing, state management, and working with dynamic data.
 
- Demo
+## Demo
 
 You can view a live demo of the application here:  
- https://prokesha.github.io/phone-catalog-app/
+👉 https://prokesha.github.io/phone-catalog-app/
 
- Key Features
+## Key Features
 
 - Product catalog for phones, tablets, and accessories  
 - Product details page with image gallery and specifications  
@@ -23,26 +23,26 @@ You can view a live demo of the application here:
 - Error handling and loading states  
 - “You may also like” product suggestions  
 
- Challenges
+## Challenges
 
 During development, several challenges were addressed:
 
- State Management
+### State Management
 Managing cart and favorites with synchronization to localStorage required a clear and scalable approach using React Context.
 
- URL-Based State
+### URL-Based State
 Implementing sorting, pagination, and filtering through URL parameters (useSearchParams) to make the app shareable and consistent.
 
- Dynamic Product Variants
+### Dynamic Product Variants
 Handling product variations (color, capacity) and mapping them correctly to product IDs.
 
- Performance & UX
+### Performance & UX
 Optimizing re-renders, implementing debounced search, and ensuring smooth UI transitions.
 
- Error Handling
+### Error Handling
 Building robust UI states for loading, empty results, and not-found pages.
 
- Installation & Setup
+## Installation & Setup
 
 To run the project locally:
 
